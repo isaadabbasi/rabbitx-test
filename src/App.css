@@ -2,3 +2,46 @@
   margin: 0;
   padding: 0;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.ob-wrapper {
+  background: #101624;
+  min-width: 480px;
+}
+
+.chip {
+  background: #202a3f;
+  border-radius: 3px;
+  padding: 4px;
+  text-transform: uppercase;
+  padding: 2px;
+}
+
+.text-white {
+  color: white;
+}
+
+/* OBHeader */
+.ob-header {
+  color: grey;
+  height: 32px;
+  padding: 8px;
+}
+
+/* OBHeader.css */
+.ob-header #ob-content {
+  margin-top: 4px;
+}
+
+
+
+/* Asks.css */
+.asks #ob-content,
+.bids #ob-content {
+  padding: 8px;
+}

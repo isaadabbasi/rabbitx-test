@@ -1,0 +1,10 @@
+#ob-ticker-container {
+  background: #1a2235;
+  color: white;
+  padding: 16px;
+}
+
+#ob-ticker-container .ob-ticker {
+  display: flex;
+  justify-content: space-between;
+}

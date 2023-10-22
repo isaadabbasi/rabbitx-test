@@ -1,0 +1,36 @@
+#ob-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#ob-content ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#ob-content .price-amount-section {
+  flex: 2 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+#ob-content ol li {
+  display: flex;
+}
+
+#ob-content .price-amount-section ol li {
+  justify-content: space-between;
+}
+
+#ob-content .total-section {
+  flex: 1 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#ob-content .total-section ol li {
+  justify-content: flex-end;
+}

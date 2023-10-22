@@ -1,15 +1,30 @@
 import OBContent from './Components/OrderBookContent'
 import OrderBookTicker from './Components/OrderBookTicker'
+import useWSConnection from './Hooks/useConnection'
+
 import './App.css'
 
 function App(): JSX.Element {
+  const [
+    isConnected,
+    setIsConnected,
+    isSubscribed,
+    setIsSubscribed,
+    data,
+  ] = useWSConnection('wss://api.testnet.rabbitx.io/ws')
+
+  console.log('isConnected: ', isConnected)
+  console.log('setIsConnected: ', setIsConnected)
+  console.log('isSubscribed: ', isSubscribed)
+  console.log('setIsSubscribed: ', setIsSubscribed)
+
   return (
     <div className="App">
       <div className="container">
         
         <div className="ob-wrapper">
           
-          {/* title✅ */}
+          {/* title ✅ */}
           <div className="ob-header">
             <OBContent amountAndPrice={
               <>
@@ -20,7 +35,7 @@ function App(): JSX.Element {
             />
           </div>
 
-          {/* asks */}
+          {/* asks ✅ */}
           <div className="asks">
             <OBContent
               amountAndPrice={

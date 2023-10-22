@@ -11,8 +11,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:typescript-sort-keys/recommended"
+    "plugin:@typescript-eslint/recommended"
   ],
   "ignorePatterns": [
     "packages/**/dist/**/*.{ts,js}",

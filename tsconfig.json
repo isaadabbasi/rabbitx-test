@@ -22,5 +22,10 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "modules": {
+    "@Components": "src/Components",
+    "@Hooks": "src/Hooks",
+    "@API": "src/API",
+  }
 }
